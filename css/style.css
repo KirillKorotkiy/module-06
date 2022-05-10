@@ -32,19 +32,27 @@
 }
 
 .wrapper{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 .wrapper-bottom{
     margin-bottom: 100px;
 }
 
+.wrapper-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .page-nav{
     display: flex;
     justify-content:space-between;
     padding-top: 40px;
-    padding-bottom: 115px;
+    padding-bottom: 15px;
 }
 
 .logo{
@@ -91,7 +99,7 @@
 .caption{
     font-size: 24px;
     text-align: center;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Kaushan Script', sans-serif;
     padding-bottom: 20px;
 }
 
@@ -134,7 +142,7 @@
     text-transform: uppercase;
     color: black;
     font-size: 14px;
-    font-family:'Montserrat';
+    font-family:'Montserrat', sans-serif;
     font-weight: 400;
 }
 
@@ -162,9 +170,8 @@
 .icons{
     width: 224px;
     height: 56px;
-    position: absolute;
-    top: 210px;
-    left: 80px;
+     margin-top: 210px;
+     margin-left: 80px;
     display: flex;
     justify-content: space-between;
     transition-property: all;
@@ -177,8 +184,7 @@
     top: 0;
     width: 380px;
     height: 470px;
-    background-image: linear-gradient(#ee8889, #e7d082);
-    opacity: 0;
+    background-image: linear-gradient(rgba(239,137,138,0.0), rgba(244,217,136,0.0));
     box-shadow: 0px 0px #2ed9b9;
     transition-property: all;
     transition-duration: 200ms;
@@ -194,11 +200,12 @@
     opacity: 0;
     transition-property: all;
     transition-duration: 200ms;
+    cursor: pointer;
 }
 
 .team-caption:hover .background{
     box-shadow: 10px 10px #2ed9b9;
-    opacity: 0.7;
+    background-image: linear-gradient(rgba(239,137,138,0.7), rgba(244,217,136,0.7));
     transition-property: all;
     transition-duration: 200ms;
 }
@@ -268,6 +275,7 @@
     font-family:'Montserrat';
     font-weight: 700;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .emal{
@@ -279,12 +287,9 @@
     font-weight: 300;
 }
 
-.wrapper-main{
-    margin-bottom: 85px;
-}
-
 .last{
     color:#f9c0c0;
+    cursor: pointer;
 }
 
 
