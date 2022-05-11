@@ -73,7 +73,6 @@
 
 .link:hover::after{
     opacity: 1;
-    transition-property:opacity;
     transition-duration: 200ms;
 }
 .link:hover{
@@ -174,6 +173,7 @@
 .icons{
     display: flex;
     justify-content: space-between;
+    opacity: 0;
 }   
 
 .icons-item{
@@ -183,8 +183,7 @@
     justify-content: center;
     align-items: center;
     background-color: #fce38a;
-    opacity: 0;
-    transition-property: color;
+    transition-property: background-color;
     transition-duration: 200ms;
     object-fit: contain;
 }
@@ -213,7 +212,7 @@
     width: 380px;
     height: 470px;
     background-image: linear-gradient(rgba(239,137,138,0.0), rgba(244,217,136,0.0));
-    transition-property: box shadow, beckground-image;
+    transition-property: box-shadow, bфckground-image;
     transition-duration: 200ms;
 }
 
@@ -223,7 +222,7 @@
     background-image: linear-gradient(rgba(239,137,138,0.7), rgba(244,217,136,0.7));
 }
 
-.team-caption:hover .icons-item{
+.team-caption:hover .icons{
     opacity:1;
 }
 
