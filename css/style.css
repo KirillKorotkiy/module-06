@@ -200,7 +200,6 @@
     opacity: 0;
     transition-property: all;
     transition-duration: 200ms;
-    cursor: pointer;
 }
 
 .sub-icons-item{
