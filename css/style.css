@@ -170,8 +170,8 @@
 .icons{
     width: 224px;
     height: 56px;
-     margin-top: 210px;
-     margin-left: 80px;
+    margin-top: 210px;
+    margin-left: 80px;
     display: flex;
     justify-content: space-between;
     transition-property: all;
@@ -202,6 +202,15 @@
     transition-duration: 200ms;
     cursor: pointer;
 }
+
+.sub-icons-item{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .team-caption:hover .background{
     box-shadow: 10px 10px #2ed9b9;
