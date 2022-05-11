@@ -73,8 +73,8 @@
 
 .link:hover::after{
     opacity: 1;
-    transition-duration: 200ms;
 }
+
 .link:hover{
     color: #f38181;
 }
