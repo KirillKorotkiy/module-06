@@ -12,7 +12,7 @@
  }
 
  img {
-    display:inline-block;
+    display:block;
     max-width: 100%;
 }
 
@@ -25,54 +25,40 @@
      color: #a2e5d9;
 }
 
+.logo{
+    font-size: 30px;
+    line-height: auto;
+}
+
+
 .site-navigation a {
     text-transform: uppercase; 
     text-decoration: none;
     color: #b0e9de;
 }
 
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    margin-bottom: 100px;
+.site-navigation{
+    display: flex;
 }
 
-.wrapper-bottom{
-    margin-bottom: 100px;
-}
-
-.wrapper-footer{
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
+.site-navigation li:not(last-child){
+    margin-right: 40px;
 }
 
 .page-nav{
     display: flex;
     justify-content:space-between;
     padding-top: 40px;
-    padding-bottom: 15px;
-}
-
-.logo{
-    font-size: 30px;
-    line-height: auto;
-}
-
-.site-navigation{
-    display: flex;
-    width: 490px;
-    justify-content: space-between;
+    padding-bottom: 115px;
 }
 
 .link{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    transition-property:color;
+    transition-duration: 200ms;
 }
-
 
 .link::after{
     content:"";
@@ -81,7 +67,7 @@
     height: 3px;
     background-color: #f38181;
     opacity: 0;
-    transition-property: all;
+    transition-property:color;
     transition-duration: 200ms;
 }
 
@@ -96,11 +82,31 @@
     transition-duration: 200ms;
 }
 
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wrapper-bottom{
+    margin-bottom: 100px;
+}
+
+.wrapper-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wrapper-team{
+    margin-bottom: 100px;
+}
+
 .caption{
     font-size: 24px;
     text-align: center;
     font-family: 'Kaushan Script', sans-serif;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .sub-caption{
@@ -125,17 +131,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-between;
-    height: 240px;
 }
 
 .features-list{
     flex-basis: 30%;
     display: flex;
+    margin-bottom: 100px;
+}
+
+.features-list:nth-last-child(-n+4){
+    margin-bottom: 0;
+}
+
+
+.features-list-item{
+   margin-top: 10px;
 }
 
 .sub-features{
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .title{
@@ -152,43 +166,19 @@
     color: #999999;
 }
 
-.features-list-item{
-    margin-top: 10px;
-}
-
 .sub-caption-item{
     text-align: center;
     margin-bottom: 95px;
 }
 
 .team-caption{
-    position: relative;
-    transition-property: all;
     transition-duration: 200ms;
 }
 
 .icons{
-    width: 224px;
-    height: 56px;
-    margin-top: 210px;
-    margin-left: 80px;
     display: flex;
     justify-content: space-between;
-    transition-property: all;
-    transition-duration: 200ms;
 }   
-
-.background{
-    position:absolute;
-    left: 0;
-    top: 0;
-    width: 380px;
-    height: 470px;
-    background-image: linear-gradient(rgba(239,137,138,0.0), rgba(244,217,136,0.0));
-    box-shadow: 0px 0px #2ed9b9;
-    transition-property: all;
-    transition-duration: 200ms;
-}
 
 .icons-item{
     width: 55px; 
@@ -198,16 +188,39 @@
     align-items: center;
     background-color: #fce38a;
     opacity: 0;
-    transition-property: all;
+    transition-property: color;
+    transition-duration: 200ms;
+    object-fit: contain;
+}
+
+.icons-item:not(:last-child){
+    margin-right: 1px;
+}
+
+.icons-item:hover{
+    background-color: #2ed9b9;
+    transition-property:color;
     transition-duration: 200ms;
 }
 
 .sub-icons-item{
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.background{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(rgba(239,137,138,0.0), rgba(244,217,136,0.0));
+    transition-property: all;
+    transition-duration: 200ms;
 }
 
 
@@ -220,13 +233,7 @@
 
 .team-caption:hover .icons-item{
     opacity:1;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-.icons-item:hover{
-    background-color: #2ed9b9;
-    transition-property: all;
+    transition-property: opacity;
     transition-duration: 200ms;
 }
 
@@ -297,7 +304,7 @@
 
 .last{
     color:#f9c0c0;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 
