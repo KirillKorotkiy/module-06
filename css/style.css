@@ -41,7 +41,7 @@
     display: flex;
 }
 
-.site-navigation li:not(last-child){
+.site-navigation li:not(:last-child){
     margin-right: 40px;
 }
 
@@ -67,19 +67,17 @@
     height: 3px;
     background-color: #f38181;
     opacity: 0;
-    transition-property:color;
+    transition-property:opacity;
     transition-duration: 200ms;
 }
 
 .link:hover::after{
     opacity: 1;
-    transition-property: all;
+    transition-property:opacity;
     transition-duration: 200ms;
 }
 .link:hover{
     color: #f38181;
-    transition-property: all;
-    transition-duration: 200ms;
 }
 
 .wrapper{
@@ -92,11 +90,7 @@
     margin-bottom: 100px;
 }
 
-.wrapper-footer{
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
+
 
 .wrapper-team{
     margin-bottom: 100px;
@@ -172,6 +166,8 @@
 }
 
 .team-caption{
+    position: relative;
+    transition-property: transform;
     transition-duration: 200ms;
 }
 
@@ -199,8 +195,6 @@
 
 .icons-item:hover{
     background-color: #2ed9b9;
-    transition-property:color;
-    transition-duration: 200ms;
 }
 
 .sub-icons-item{
@@ -219,7 +213,7 @@
     width: 380px;
     height: 470px;
     background-image: linear-gradient(rgba(239,137,138,0.0), rgba(244,217,136,0.0));
-    transition-property: all;
+    transition-property: box shadow, beckground-image;
     transition-duration: 200ms;
 }
 
@@ -227,14 +221,10 @@
 .team-caption:hover .background{
     box-shadow: 10px 10px #2ed9b9;
     background-image: linear-gradient(rgba(239,137,138,0.7), rgba(244,217,136,0.7));
-    transition-property: all;
-    transition-duration: 200ms;
 }
 
 .team-caption:hover .icons-item{
     opacity:1;
-    transition-property: opacity;
-    transition-duration: 200ms;
 }
 
 .team-caption-top{
@@ -244,8 +234,6 @@
 
 .team-caption:hover{
     transform: translate(-10px, -10px);
-    transition-property: all;
-    transition-duration: 200ms;
 }
 
 .name{
