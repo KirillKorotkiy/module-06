@@ -212,7 +212,7 @@
     width: 380px;
     height: 470px;
     background-image: linear-gradient(rgba(239,137,138,0.0), rgba(244,217,136,0.0));
-    transition-property: box-shadow, bфckground-image;
+    transition-property: box-shadow, background-image;
     transition-duration: 200ms;
 }
 
